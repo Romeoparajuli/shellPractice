@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milan Parajuli - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .bg-custom-dark {
+            background-color: #0F2A1D;
+        }
+
+        .text-custom-light {
+            color: #375534;
+        }
+
+        .hover-underline:hover {
+            text-decoration: underline;
+        }
+
+        .transition-all {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animate-slide-in-left {
+            animation: slideInLeft 1s ease-in-out;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-slide-in-right {
+            animation: slideInRight 1s ease-in-out;
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Hero Section -->
+    <section class="bg-custom-dark text-white py-20 animate-fade-in">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-around">
+            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Milan Parajuli</h1>
+                <p class="text-lg md:text-xl">Java Spring Boot Developer</p>
+                <a href="#projects"
+                    class="mt-6 inline-block bg-custom-light text-white px-6 py-3 rounded-full hover:bg-green-600 transition-all">View
+                    My Work</a>
+            </div>
+            <div class="md:w-1/3">
+                <img src="https://via.placeholder.com/300" alt="Milan Parajuli"
+                    class="rounded-full shadow-lg mx-auto animate-slide-in-right">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 px-4 animate-slide-in-left">
+        <div class="container mx-auto bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-semibold text-custom-light mb-6 border-b-2 border-gray-300 pb-2">About Me</h2>
+            <p class="text-gray-700 leading-relaxed">
+                I am an undergraduate student from CCT College, deeply passionate about Java Spring Boot development.
+                With a strong foundation in Java and its related technologies, I am driven to contribute to innovative
+                projects. My goal is to leverage my skills and knowledge to create impactful and efficient software
+                solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-4 bg-gray-100 animate-slide-in-right">
+        <div class="container mx-auto bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-semibold text-custom-light mb-6 border-b-2 border-gray-300 pb-2">Skills</h2>
+            <ul class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <li class="bg-gray-200 p-3 rounded-md text-center">Java</li>
+                <li class="bg-gray-200 p-3 rounded-md text-center">HTML</li>
+                <li class="bg-gray-200 p-3 rounded-md text-center">CSS</li>
+                <li class="bg-gray-200 p-3 rounded-md text-center">Tailwind CSS</li>
+                <li class="bg-gray-200 p-3 rounded-md text-center">GitHub</li>
+                <li class="bg-gray-200 p-3 rounded-md text-center">MySQL</li>
+                <li class="bg-gray-200 p-3 rounded-md text-center">Spring Data JPA</li>
+                <li class="bg-gray-200 p-3 rounded-md text-center">Hibernate</li>
+                <li class="bg-gray-200 p-3 rounded-md text-center">Basic Docker</li>
+                <li class="bg-gray-200 p-3 rounded-md text-center">PHP</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 animate-slide-in-left">
+        <div class="container mx-auto bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-semibold text-custom-light mb-6 border-b-2 border-gray-300 pb-2">Projects</h2>
+            <ul class="space-y-4">
+                <li class="border-b border-gray-300 pb-2">
+                    <h3 class="font-medium">Employee Management System</h3>
+                    <p class="text-gray-600">Description of the project.</p>
+                </li>
+                <li class="border-b border-gray-300 pb-2">
+                    <h3 class="font-medium">Attendance Management System</h3>
+                    <p class="text-gray-600">Description of the project.</p>
+                </li>
+                <li class="border-b border-gray-300 pb-2">
+                    <h3 class="font-medium">Pharmacy Management System</h3>
+                    <p class="text-gray-600">Description of the project.</p>
+                </li>
+                <li class="border-b border-gray-300 pb-2">
+                    <a href="https://github.com/romeo-parajuli-m/Employee-Management-System-EMS--Hibernate-ORM"
+                        target="_blank" class="text-blue-500 hover-underline">Employee-Management-System-EMS--Hibernate-ORM
+                        (GitHub)</a>
+                </li>
+                <li>
+                    <a href="https://github.com/romeo-parajuli-m/Spring-Boot-Data-JPA---Student-Management-System"
+                        target="_blank" class="text-blue-500 hover-underline">Spring-Boot-Data-JPA---Student-Management-System
+                        (GitHub)</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="py-16 px-4 bg-gray-100 animate-slide-in-right">
+        <div class="container mx-auto bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-semibold text-custom-light mb-6 border-b-2 border-gray-300 pb-2">Experience &
+                Education</h2>
+            <ul class="space-y-4">
+                <li><strong class="text-custom-light">Undergraduate</strong> - CCT College</li>
+                <li><strong class="text-custom-light">Java Development Training</strong> - Deerwalk Pvt Ltd</li>
+                <li><strong class="text-custom-light">Internship</strong> - 3 months at Singht Bit Pvt Ltd</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 animate-slide-in-left">
+        <div class="container mx-auto bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-semibold text-custom-light mb-6 border-b-2 border-gray-300 pb-2">Contact</h2>
+            <div class="space-y-4">
+                <p><strong class="text-custom-light">Phone:</strong> 9867263010</p>
+                <p><strong class="text-custom-light">Email:</strong> <a href="mailto:milankit123@gmail.com"
+                        class="text-blue-500 hover-underline">milankit123@gmail.com</a></p>
+                <p><strong class="text-custom-light">Facebook:</strong> <a href="https://www.facebook.com/milan.parajuli.m"
+                        target="_blank" class="text-blue-500 hover-underline">Milan Parajuli</a></p>
+                <p><strong class="text-custom-light">GitHub:</strong> <a href="https://github.com/romeo-parajuli-m"
+                        target="_blank" class="text-blue-500 hover-underline">romeo-parajuli-m</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-custom-dark text-white text-center py-4">
+        <p>&copy; 2023 Milan Parajuli. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
